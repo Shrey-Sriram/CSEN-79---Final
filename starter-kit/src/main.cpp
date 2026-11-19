@@ -43,6 +43,7 @@ int main() {
         else if (firstWord == "INBOX") 
         {
             // TODO
+            // find the inbox of the user in the file then call displayInbox();
         }
         else if (firstWord == "HISTORY") 
         {

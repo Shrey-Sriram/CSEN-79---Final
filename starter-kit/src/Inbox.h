@@ -58,4 +58,9 @@ public:
                  << alerts[index].time << endl;
         }
     }
+
+    int getSize() const
+    {
+        return size;
+    }
 };
