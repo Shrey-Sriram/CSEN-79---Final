@@ -25,7 +25,7 @@ Put each of your data structures in its own header under `include/`, for example
 
 You need a C++17 compiler and CMake 3.16 or later.
 
-```
+```sh
 cmake -S . -B build              # optimized Release build, counters on
 cmake --build build -j
 ./build/tests                    # run unit tests
@@ -33,8 +33,8 @@ cmake --build build -j
 
 Other builds:
 
-```
-cmake -S . -B build-asan -DSANITIZE=ON      # AddressSanitizer + UBSan, for the leak check
+```sh
+CXX=clang++ cmake -S . -B build-asan -DSANITIZE=ON      # AddressSanitizer + UBSan, for the leak check
 cmake -S . -B build-fast -DCOUNTERS=OFF     # counters compiled away, for pure timings
 ```
 
